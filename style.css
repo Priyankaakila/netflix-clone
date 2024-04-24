@@ -1,0 +1,791 @@
+body{
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+}
+.login{
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url("https://assets.nflxext.com/ffe/siteui/vlv3/5e16108c-fd30-46de-9bb8-0b4e1bbbc509/29d8d7d7-83cc-4b5f-aa9b-6fd4f68bfaa6/IN-en-20240205-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-repeat: no-repeat;
+    /* transform: scale(1.25) translateY(-10%); 
+    object-fit: cover; */
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 8px solid rgb(44, 43, 43);
+}
+header{
+    margin: -20px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header>img{
+    width: 210px;
+    height: auto;
+    filter: brightness(1);
+}
+.lang{
+    border: 1px groove grey;
+    border-radius: 5px;
+    padding: 4px 4px;
+    width: 110px;
+    height: 20px;
+    color: white;
+    margin-left: 800px;
+    margin-right: 20px;
+}
+.lang>select{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    appearance: none;
+    width: 70px;
+    font-size: 15px;
+    cursor: pointer;
+}
+select>option{
+    color: black;
+    min-width: 130px;
+    z-index: 1;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+.s1{
+    width: 15px;
+    height: 15px;
+    vertical-align:  sub;
+    margin-right: 5px;
+    margin-left: 4px;
+}
+.s2{
+    width: 16px;
+    height: 16px;
+    margin-left: -10px;
+    vertical-align: sub;
+}
+.sign{
+    border: 1px solid transparent;
+    background-color: red;
+    color: white;
+    font-size: 12.5px;
+    border-radius: 5px;
+    padding:8px 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.sign:hover{
+opacity: .9;
+}
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 150px;
+    text-align: center;
+}
+.intro h1{
+    font-size: 45px;
+    font-weight: 900;
+}
+.p1{
+    font-size: 24px;
+    margin-top: -20px;
+}
+.p2{
+    font-size: 20px;
+    margin-top: -3px;
+}
+.register{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.mail{
+    width: 300px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color:transparent;
+    border: 1px solid rgb(125, 125, 125) ;
+    backdrop-filter: blur(2px);
+    font-size: 16px;
+    color: white;
+}
+.mail::placeholder{
+    color:rgb(219, 216, 216);
+    font-size: 15px;
+}
+.start{
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 18px;
+    background-color: red;
+    color: white;
+    font-weight: 550;
+    border: none;
+}
+.start>i{
+    font-size: 16px;
+    margin-left: 10px;
+}
+.start:hover{
+    cursor: pointer;
+    opacity: .9;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    color: white;
+    padding: 100px;
+    border-bottom: 8px solid rgb(44, 43, 43);
+}
+.vedio1{
+    width: 550px;
+}
+.cont h1{
+    font-size: 45px;
+    font-weight: 900;
+}
+.cont p{
+    font-size: 22px;
+    font-weight: 550;
+    width: 600px;
+}
+.tv{
+    position: relative;
+    z-index: 1;
+}
+
+.tv>video{
+    width: 400px;
+    position: absolute;
+    top: 85px;
+    right: 77px;
+    z-index: -1;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    color: white;
+    padding: 70px 250px 60px 80px;
+    border-bottom: 8px solid rgb(44, 43, 43);
+}
+.mobile{
+    position: relative;
+}
+.download{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid grey ;
+    padding: 10px;
+    width: 320px;
+    background-color:black;
+    border-radius: 10px;
+    position: absolute;
+    top: 355px;
+    left: 150px;
+}
+.i1{
+    width: 51px;
+    height: 72px;
+}
+.i2{
+    width: 48px;
+}
+.movie{
+    margin-left: -80px;
+}
+.movie>h1{
+    font-size: 16px;
+}
+.movie>p{
+    color: dodgerblue;
+    margin-top: -10px;
+    font-size: 14px;
+}
+.content2{
+    width: 500px;
+}
+.content2>h1{
+    font-size: 48px;
+    font-weight: 900;
+}
+.content2>p{
+    font-size: 22px;
+    margin-top: -25px;
+    width: 630px;
+}
+.screens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    color: white;
+    padding: 60px ;
+    border-bottom: 8px solid rgb(44, 43, 43);
+}
+.content3>h1{
+    font-size: 48px;
+    font-weight: 900;
+}
+.content3>p{
+    font-size: 22px;
+    margin-top: -25px;
+    width: 600px;
+}
+.apple{
+    position: relative;
+    z-index: 1;
+    width: 570px;
+}
+.apple-tv>video{
+    position: absolute;
+    top: 2000px;
+    right: 280px;
+    width: 370px;
+    height: 270px;
+}
+.kids{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    color: white;
+    padding: 70px 100px;
+    border-bottom: 8px solid rgb(44, 43, 43);
+}
+.moon{
+    width: 600px;
+    float: left;
+}
+.content4>h1{
+    font-size: 48px;
+    font-weight: 900;
+}
+.content4>p{
+    font-size: 22px;
+    margin-top: -25px;
+    width: 540px;
+}
+.faq{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:black;
+    color: white;
+    padding: 30px 150px 75px 150px;
+    border-bottom: 8px solid rgb(44, 43, 43);
+}
+.faq>h1{
+    font-size: 48px;
+    font-weight: 900;
+}
+.faq>button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 30px 10px 30px;
+    color: white;
+    width: 90%;
+    height: 80px;
+    background-color:  rgb(44, 43, 43);
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: none;
+}
+.faq>button:hover{
+    background-color: rgb(71, 69, 69);
+}
+.panel>p{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 30px 10px 30px;
+    color: white;
+    width: 85%;
+    margin-left: 60px;
+    height: auto;
+    margin-top: -6px;
+    background-color:  rgb(44, 43, 43);
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: none;
+}
+.reg2{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer{
+    background-color: black;
+    padding: 50px 150px;
+    color: rgb(219, 216, 216);
+    font-size: 16px;
+}
+footer>p{
+    font-size: 18px;
+}
+footer>p>a{
+    color: rgb(219, 216, 216);
+    font-size: 16px;
+}
+.footer-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    width: 1000px;
+    margin-top: 20px;
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: left;
+    flex-direction: column;
+    gap: 15px
+}
+.navbar>p{
+    margin-top: 8px;
+}
+.lang2{
+    border: 1px groove grey;
+    border-radius: 5px;
+    padding: 4px 4px;
+    width: 110px;
+    height: 20px;
+    color: white;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.lang2>select{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    appearance: none;
+    width: 70px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.navbar>a{
+    font-size: 15px;
+    color: rgb(219, 216, 216);
+}
+
+
+
+
+@media screen  and (max-width:787px){
+    /* body{
+        overflow-x: hidden;
+    } */
+    .login{
+        background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url("https://assets.nflxext.com/ffe/siteui/vlv3/5e16108c-fd30-46de-9bb8-0b4e1bbbc509/29d8d7d7-83cc-4b5f-aa9b-6fd4f68bfaa6/IN-en-20240205-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+        /* transform: scale(1.25) translateY(-10%); 
+        object-fit: cover; */
+        background-size: cover;
+        /* width: 100%; */
+        height: auto;
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 8px solid rgb(44, 43, 43);
+        box-sizing: border-box;
+        
+    }
+    header{
+        padding: 10px;
+        width: 100%;
+    }
+    header>img{
+        width: 250px;
+        margin-right: 50px;
+        margin-left: -30px;
+    }
+    .lang{
+        padding: 10px ;
+        /* width: 150px; */
+        margin-left: 0px;
+        /* margin-right: 20px; */
+    }
+    .lang>select{
+        font-size: 15px;
+    }
+    select>option{
+        font-size: 15px;
+        min-width: 50px;
+    }
+    .s1{
+        width: 100px;
+        margin-right: 5px;
+    }
+    .s2{
+        width: 12px;
+        margin-left:-20px;
+    }
+    .sign{
+        font-size: 10px;
+        padding: 6px 16px;
+        font-weight: 600;
+    }
+    .intro{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .intro h1{
+        font-size: 22px;
+        font-weight: 900;
+        width: 350px;
+    }
+    .p1{
+        font-size: 18px;
+        margin-top: -20px;
+    }
+    .p2{
+        font-size: 16px;
+        margin-top: -3px;
+        width: 350px;
+    }
+    .register{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .mail{
+        width: 150px;
+        padding: 10px;
+        font-size: 10px;
+        color: white;
+    }
+    .mail::placeholder{
+        color:rgb(219, 216, 216);
+        font-size: 10px;
+    }
+    .start{
+        padding:10.5px;
+        font-size: 10px;
+        width: 100px;
+    }
+    .start>i{
+    font-size: 10px;
+    margin-left: 10px;
+}
+    .content{
+       width: 100%;
+        margin-left: -20px;
+        padding:50px 100px;
+    }
+    .cont h1{
+        font-size: 25px;
+        font-weight: 900;
+        text-align: center;
+        
+    }
+    .cont p{
+        font-size: 16px;
+        font-weight: 550;
+        width: 300px;
+        text-align: center;
+    }
+    .vedio1{
+        width: 300px;
+    }
+    .tv>video{
+        width: 220px;
+        position: absolute;
+        top: 45px;
+        right: 43px;
+        z-index: -1;
+    }
+    .container{
+        width: 100%;
+        padding: 30px 100px;
+        padding-left: 100px;
+    }
+    .mobile-img{
+        width: 400px;
+    }
+    .download{
+        width: 200px;
+        position: absolute;
+        top: 210px;
+        left: 90px;
+    }
+    .i1{
+        width: 31px;
+        height: 42px;
+    }
+    .i2{
+        width: 38px;
+    }
+    .movie{
+        margin-left: -40px;
+    }
+    .movie>h1{
+        font-size: 10px;
+    }
+    .movie>p{
+        margin-top: -8px;
+        font-size: 8px;
+    }
+    .content2{
+        width: 500px;
+        margin-left: 20px;
+    }
+    .content2>h1{
+        font-size: 22px;
+        font-weight: 900;
+        width: 300px;
+        text-align: center;
+        margin-left: -45px;
+    }
+    .content2>p{
+        font-size: 16px;
+        margin-top: 5px;
+        width: 300px;
+        text-align: center;
+        margin-left: -45px;
+    }
+    .screens{
+        width: 100%;
+        margin-left: -70px;
+        padding: 40px 100px;
+    }
+    .content3 , .apple-tv{
+        margin-left: 50px;
+    }
+    .content3>h1{
+        font-size: 22px;
+        font-weight: 900;
+        width: 300px;
+        text-align: center;
+    }
+    .content3>p{
+        font-size: 16px;
+        margin-top: 5px;
+        width: 300px;
+        text-align: center;
+    }
+    .apple{
+        position: relative;
+        z-index: 1;
+        width: 300px;
+    }
+    .apple-tv>video{
+        position: absolute;
+        top: 1495px;
+        right: 500px;
+        width: 180px;
+
+    }
+    .kids{
+        width: 100%;
+
+    }
+    .moon{
+        width: 350px;
+    }
+    .content4{
+        margin-left: 85px;
+    }
+    .content4>h1{
+        font-size: 22px;
+        font-weight: 900;
+        width: 300px;
+        text-align: center;
+        margin-left: -100px;
+    }
+    .content4>p{
+        font-size: 16px;
+        margin-top: 5px;
+        width: 300px;
+        text-align: center;
+        margin-left: -100px;
+    }
+    .faq{
+        width: 100%;
+        margin-left: -120px;
+    }
+    .faq>h1{
+        font-size: 22px;
+        font-weight: 900;
+        width: 300px;
+        text-align: center;
+    }
+    .faq>button{
+        padding:10px 30px 10px 30px;
+        height: 50px;
+        background-color:  rgb(44, 43, 43);
+        font-size: 12px;
+        width: 120%;
+    }
+    .panel>p{
+        font-size: 12px;
+        width: 240px;
+        margin-left : 0px;
+        text-align: justify;
+    }
+    .reg2 >p{
+        font-size: 10px;
+        text-align: center;
+    }
+    .reg2> .register>.start{
+        padding: 8px;
+        font-size: 10px;
+    }
+    footer{
+        width: 100%;
+    }
+    .footer-nav{
+        width: 300px;
+        margin-top: 20px;
+        margin-left: -100px;
+    }
+    .navbar>a{
+        font-size: 10px;
+    }
+    footer>p{
+        font-size: 12px;
+        margin-left: -100px;
+    }
+    footer>p>a{
+        font-size: 10px;
+    }
+    .lang2{
+        width: 90px;
+        padding: 0;
+    }
+    .lang2>select{
+        font-size: 9px;
+        width: 30px;
+    }
+    select>option{
+        font-size: 10px;
+        min-width: 50px;
+    }
+    .s1{
+        width: 9px;
+        margin-right: 5px;
+    }
+    .s2{
+        width: 10px;
+        margin-left: 10px;
+    }
+}
+
+
+@media screen and (max-width:496px) {
+    .login{
+        width: 100%;
+        height: auto;
+        padding-bottom: 50px;
+        background-size: cover;
+    }
+    header{
+        margin: -20px 20px 0 15px;
+            width: 80%;
+    } 
+    header>img{
+        width: 120px;
+        margin-right: 50px;
+    }
+    
+    .lang{
+        width: 50px;
+        padding-top: 0px;
+        padding-right: 5px;
+        padding-left: 0px;
+        padding-bottom: 3px;
+        margin-left: 100px;
+        margin-top: 0px;
+    }
+    .lang>select{
+        display: none;
+    }
+    .sign{
+        padding: 5px 10px;
+        margin-top: 0px;
+        margin-left: -30px;
+        margin-right: -10px;
+    }
+    .s1{
+        margin-left: 10px;
+    }    
+    .intro{
+        margin-left:-8px;
+    }
+    .content{
+        width: 59.6%;
+        margin-left: 0px;
+    }
+    .content2{
+        margin-left: 50px;
+    }
+    .container{
+        margin-left: -15px;
+        width: 62.7%;
+    }
+    .screens{
+        /* margin-left: -80px; */
+        width: 73.8%;
+    }
+    .apple-tv>video{
+        position: absolute;
+        top: 1490px;
+        left: 155px;
+        width: 180px;   
+    }
+    .kids{
+        width: 59.6%;
+    }
+    .faq{
+        width: 63.7%;
+    }
+    .faq>button{
+        margin-left: 30px;
+    }
+    .panel>p{
+        width: 101%;
+        margin-left: -17px;
+    }
+    .reg2{
+        margin-left: 30px;
+    }
+    footer{
+        width: 39.5%;
+    }
+}
